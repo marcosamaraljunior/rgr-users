@@ -1,0 +1,17 @@
+<mat-card class="mat-elevation-z4">
+
+    <mat-card-title>
+        Lista de Usuarios
+    </mat-card-title>
+
+    <mat-card-content class="card-list">
+        <div *ngFor="let user of userList">
+
+            <app-user-card [user]="user">
+
+            </app-user-card>
+        </div>
+
+    </mat-card-content>
+
+</mat-card>

@@ -1,0 +1,33 @@
+<mat-card class="card mat-elevation-z15">
+    <mat-card-title class='title'>{{user.name}}</mat-card-title>
+    <mat-card-content>
+        <div class="flex-row">
+            <div>
+                <img src="../../../assets/img/scates-1.jpg" alt="" class="perfil-image">
+            </div>
+            <div class="flex-column">
+                <label class="info" for=""><strong> Nome Completo: </strong> {{user.name}}</label>
+                <label class="info"><strong> Telefone: </strong> {{user.phone}}</label>
+                <label class="info"><strong> E-mail: </strong> {{user.email}}</label>
+                <label class="info"><strong> Website: </strong>
+                    <a href="http://{{user.website}}"> {{user.website}} </a>
+                </label>
+                <label class="info"><strong> Empresa: </strong> {{user.company.name}}</label>
+                <label class="info"><strong> Endereço: </strong> {{user.address.street}}</label>
+                <label class="info"><strong> Ver no mapa: </strong>
+                    <i class="material-icons map-icon" (click)="showMap(user.id)">public</i>
+                </label>
+
+            </div>
+
+            <div class="map hide" id="map{{user.id}}">
+
+                <agm-map [latitude]="lat" [longitude]="lng">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                </agm-map>
+            </div>
+
+
+        </div>
+    </mat-card-content>
+</mat-card>

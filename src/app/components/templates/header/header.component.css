@@ -1,0 +1,41 @@
+.header a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: sticy;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    max-height: 30px;
+}
+
+a{
+    color: black;
+}
+
+.header .title-group {
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+
+.header .title-group i  {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    color: #9b0000;
+    padding-right: 5px;;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%  !important;
+}

@@ -1,0 +1,28 @@
+.card{
+    margin : 15px;
+   width: 310px;
+   padding: 15px;
+}
+
+.title {
+    font-size: 1.1rem;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-star:hover{
+    color: #ffd600;
+    cursor: pointer ;
+}
+
+.selected-favorite{
+    color: #ffd600;
+}
+
+a{
+    text-decoration: none;
+    color: #9b0000;
+}

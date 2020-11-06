@@ -1,0 +1,29 @@
+<mat-card class="mat-elevation-z3 card" id="{{user.id}}">
+    <mat-card-title class="flex-row title">
+        <div class="name">
+            {{user.name}}
+        </div>
+
+        <div class="info">
+            <a routerLink="user/details/{{user.id}}">
+                <i class="material-icons" type="button">
+                    info
+                </i>
+
+            </a>
+            <i class="material-icons btn-star" type="button" (click)="toggleFavorite(user)">
+                star
+            </i>
+
+        </div>
+
+
+    </mat-card-title>
+
+    <!-- <mat-card-content> {{user.email}} </mat-card-content> -->
+
+    <mat-card-footer class="card-footer">
+
+    </mat-card-footer>
+
+</mat-card>
